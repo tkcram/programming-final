@@ -1,0 +1,111 @@
+{
+  "details": {
+    "entity": "hero",
+    "race": "elf",
+    "subrace": "high-elf",
+    "class": "paladin",
+    "background": "acolyte",
+    "level": 1,
+    "alignment": "Neutral Good",
+    "proficiency": 2
+  },
+  "stats": {
+    "raw": {
+      "str": 8,
+      "dex": 13,
+      "con": 12,
+      "int": 14,
+      "wis": 16,
+      "cha": 14
+    },
+    "mod": {
+      "str": -1,
+      "dex": 1,
+      "con": 1,
+      "int": 2,
+      "wis": 3,
+      "cha": 2
+    },
+    "saves": {
+      "str": -1,
+      "dex": 1,
+      "con": 1,
+      "int": 2,
+      "wis": 5,
+      "cha": 4
+    }
+  },
+  "skills": {
+    "acrobatics": 1,
+    "animal-handling": 3,
+    "arcana": 2,
+    "athletics": 1,
+    "deception": 2,
+    "history": 2,
+    "insight": 5,
+    "intimidation": 2,
+    "investigation": 2,
+    "medicine": 3,
+    "nature": 2,
+    "perception": 3,
+    "performance": 2,
+    "persuasion": 4,
+    "religion": 4,
+    "sleight-of-hand": 1,
+    "stealth": 1,
+    "survival": 3
+  },
+  "inventory": {
+    "weapon": {
+      "war-pick": {
+        "damage": {
+          "piercing":"1d8+3"
+        },
+        "category": "Martial",
+        "range": "Melee",
+        "properties": [],
+        "quantity": 1,
+        "equipped": true
+      },
+      "blowgun": {
+        "damage": "1d1",
+        "category": "Martial",
+        "range": "Ranged",
+        "properties": [
+          "ammunition",
+          "loading"
+        ],
+        "quantity": 1,
+        "equipped": false
+      },
+      "javelin": {
+        "damage": "1d6",
+        "category": "Simple",
+        "range": "Melee",
+        "properties": [
+          "thrown",
+          "monk"
+        ],
+        "quantity": 5,
+        "equipped": false
+      }
+    },
+    "armor": {
+      "chain-mail": {
+        "ac": 16,
+        "category": "Heavy",
+        "quantity": 1,
+        "equipped": true
+      }
+    }
+  },
+  "combat": {
+    "spellcasting": "cha",
+    "initiative": 11,
+    "ac": 16,
+    "hit-die": 1,
+    "hp-max": 10,
+    "hp-current": 10,
+    "passive-perception": 13
+  }
+}

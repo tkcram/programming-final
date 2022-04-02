@@ -1,73 +1,64 @@
 {
-  "Specifics": {
+  "details": {
+    "entity": "hero",
     "race": "dwarf",
-    "class": "sorcerer",
+    "subrace": "hill-dwarf",
+    "class": "bard",
     "background": "acolyte",
     "level": 1,
-    "alignment": "Neutral-Good",
     "proficiency": 2,
-    "subrace": "hill-dwarf"
+    "alignment": "Chaotic Good"
   },
   "stats": {
     "raw": {
-      "str": 5,
-      "dex": 13,
-      "con": 10,
-      "int": 11,
-      "wis": 11,
-      "cha": 14
+      "str": 7,
+      "dex": 9,
+      "con": 18,
+      "int": 9,
+      "wis": 10,
+      "cha": 6
     },
     "mod": {
-      "str": -3,
-      "dex": 1,
-      "con": 0,
-      "int": 0,
+      "str": -2,
+      "dex": -1,
+      "con": 4,
+      "int": -1,
       "wis": 0,
-      "cha": 2
+      "cha": -2
     },
     "saves": {
-      "str": -3,
+      "str": -2,
       "dex": 1,
-      "con": 2,
-      "int": 0,
+      "con": 4,
+      "int": -1,
       "wis": 0,
-      "cha": 4
+      "cha": 0
     }
   },
   "skills": {
-    "acrobatics": 1,
+    "acrobatics": -1,
     "animal-handling": 0,
-    "arcana": 2,
-    "athletics": -3,
-    "deception": 2,
-    "history": 0,
+    "arcana": 1,
+    "athletics": -2,
+    "deception": -2,
+    "history": -1,
     "insight": 2,
-    "intimidation": 2,
-    "investigation": 0,
+    "intimidation": -2,
+    "investigation": -1,
     "medicine": 0,
-    "nature": 0,
+    "nature": -1,
     "perception": 0,
-    "performance": 2,
-    "persuasion": 4,
-    "religion": 2,
+    "performance": -2,
+    "persuasion": 0,
+    "religion": 1,
     "sleight-of-hand": 1,
-    "stealth": 1,
+    "stealth": -1,
     "survival": 0
   },
-  "combat": {
-    "ac": 10,
-    "spellcasting_ability": "cha",
-    "hit-die-value": 6,
-    "hit-die-total": 1,
-    "hp-max": 5,
-    "hp-current": 5,
-    "initiative": 11,
-    "passive-perception": 10
-  },
-  "equipment": {
+  "inventory": {
     "weapon": {
       "dagger": {
-        "damage": "1d4",
+        "damage": "1d4+-1",
         "category": "Simple",
         "range": "Melee",
         "properties": [
@@ -76,19 +67,38 @@
           "thrown",
           "monk"
         ],
-        "quantity": 2
+        "quantity": 1,
+        "equipped": false,
+        "bonus": 1
       },
-      "shortbow": {
-        "damage": "1d6",
-        "category": "Simple",
-        "range": "Ranged",
+      "rapier": {
+        "damage": "1d8+-1",
+        "category": "Martial",
+        "range": "Melee",
         "properties": [
-          "ammunition",
-          "two-handed"
+          "finesse"
         ],
-        "quantity": 1
+        "quantity": 1,
+        "equipped": true,
+        "bonus": 1
       }
     },
-    "armor": {}
+    "armor": {
+      "leather-armor": {
+        "ac": 10,
+        "category": "Light",
+        "quantity": 1,
+        "equipped": true
+      }
+    }
+  },
+  "combat": {
+    "spellcasting": "cha",
+    "initiative": -1,
+    "ac": 10,
+    "hit-die": 1,
+    "hp-max": 6,
+    "hp-current": 6,
+    "passive-perception": 10
   }
 }

@@ -1,0 +1,99 @@
+{
+  "details": {
+    "entity": "monster",
+    "name": "adult-red-dragon",
+    "size": "Huge",
+    "type": "dragon",
+    "alignment": "chaotic evil",
+    "rating": 17
+  },
+  "stats": {
+    "raw": {
+      "str": 27,
+      "dex": 10,
+      "con": 25,
+      "int": 16,
+      "wis": 13,
+      "cha": 21
+    },
+    "mod": {
+      "str": 8,
+      "dex": 0,
+      "con": 7,
+      "int": 3,
+      "wis": 1,
+      "cha": 5
+    },
+    "saves": {
+      "str": 8,
+      "dex": 6,
+      "con": 13,
+      "int": 3,
+      "wis": 7,
+      "cha": 11
+    }
+  },
+  "skills": {
+    "acrobatics": 0,
+    "animal-handling": 1,
+    "arcana": 3,
+    "athletics": 8,
+    "deception": 5,
+    "history": 3,
+    "insight": 1,
+    "intimidation": 5,
+    "investigation": 3,
+    "medicine": 1,
+    "nature": 3,
+    "perception": 13,
+    "performance": 5,
+    "persuasion": 5,
+    "religion": 3,
+    "sleight-of-hand": 0,
+    "stealth": 6,
+    "survival": 1
+  },
+  "combat": {
+    "ac": 19,
+    "hp-max": 256,
+    "hp-current": 256,
+    "damage-vulnerability": [],
+    "damage-resistance": [],
+    "damage-immunity": [
+      "fire"
+    ],
+    "condition-immunity": [],
+    "initiative": 0
+  },
+  "actions": {
+    "Bite": {
+      "damage": {
+        "piercing": "2d10+8",
+        "fire": "2d6+0"
+      },
+      "bonus": 14
+    },
+    "Claw": {
+      "damage": {
+        "slashing": "2d6+8"
+      },
+      "bonus": 14
+    },
+    "Tail": {
+      "damage": {
+        "bludgeoning": "2d8+8"
+      },
+      "bonus": 14
+    },
+    "Fire Breath": {
+      "damage": {
+        "fire": "18d6+0"
+      },
+      "dc": {
+        "save-type": "dex",
+        "save-value": 21
+      },
+      "recharge": 5
+    }
+  }
+}

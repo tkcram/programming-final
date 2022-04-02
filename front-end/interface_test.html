@@ -8,122 +8,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="interface_stylesheet.css" />
-  <script src="interface_script.js" defer></script>
+  <script src="maze-import.js" defer></script>
 </head>
 
 <body>
-  <main id="map">
-    <div id="row-1" class="row">
-      <div class="map-item">
-        <div class="map-card-inner">
-          <div class="map-card-back">
-            <img class="map-image" src="https://r1.ilikewallpaper.net/ipad-air-wallpapers/download/104429/outrun-abstract-square-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg" alt="<%= title %> by <%= creator %>" />
-          </div>
-          <div class="map-card-front">
-            <div class="hero-dude hero-image" id="hero">
-              <img class="map-image" src="https://pbs.twimg.com/profile_images/1351937767954112512/Hu_D8JOU_400x400.jpg" alt="<%= title %> by <%= creator %>" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="map-item">
-        <div class="map-card-inner">
-          <div class="map-card-back">
-            <img class="map-image" src="https://r1.ilikewallpaper.net/ipad-air-wallpapers/download/104429/outrun-abstract-square-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg" alt="<%= title2 %> by <%= creator2 %>" />
-          </div>
-          <div class="map-card-front test-outer">
-            <div class="test-left">
-              <div class="left-big"> <img src="https://www.pinclipart.com/picdir/big/541-5413340_transparent-character-traits-clipart-joy-inside-out-png.png"/> </div>
-              <div class="left-1"> <h4>HP</h4> <h1>50</h1></div>
-              <div class="left-2"> <h4>Atk</h4> <h1>10</h1></div>
-              <div class="left-3"> <h4>Def</h4> <h1>15</h1></div>
-              <div class="left-4"> <h4>Spd</h4> <h1>7</h1></div>
-            </div>
-            <div class="test-right">
-              <div class="right-big"> <img src="https://i.pinimg.com/originals/c9/20/b4/c920b4408d20a6150b902ac435ebd2cc.png"/></div>
-              <div class="right-1"> <h4>HP</h4> <h1>40</h1></div>
-              <div class="right-2"> <h4>Atk</h4> <h1>13</h1></div>
-              <div class="right-3"> <h4>Def</h4> <h1>14</h1></div>
-              <div class="right-4"> <h4>Spd</h4> <h1>8</h1></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="map-item">
-        <div class="map-card-inner">
-          <div class="map-card-back">
-            <img class="map-image" src="https://r1.ilikewallpaper.net/ipad-air-wallpapers/download/104429/outrun-abstract-square-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg" alt="<%= title2 %> by <%= creator2 %>" />
-          </div>
-          <div class="map-card-front">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="row-2" class="row">
-      <div class="map-item">
-        <div class="map-card-inner">
-          <div class="map-card-back">
-            <img class="map-image" src="https://r1.ilikewallpaper.net/ipad-air-wallpapers/download/104429/outrun-abstract-square-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg" alt="<%= title2 %> by <%= creator2 %>" />
-          </div>
-          <div class="map-card-front">
-          </div>
-        </div>
-      </div>
-      <div class="map-item">
-        <div class="map-card-inner">
-          <div class="map-card-back">
-            <img class="map-image" src="https://r1.ilikewallpaper.net/ipad-air-wallpapers/download/104429/outrun-abstract-square-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg" alt="<%= title2 %> by <%= creator2 %>" />
-          </div>
-          <div class="map-card-front">
-          </div>
-        </div>
-      </div>
-      <div class="map-item">
-        <div class="map-card-inner">
-          <div class="map-card-back">
-            <img class="map-image" src="https://r1.ilikewallpaper.net/ipad-air-wallpapers/download/104429/outrun-abstract-square-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg" alt="<%= title2 %> by <%= creator2 %>" />
-          </div>
-          <div class="map-card-front">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="row-3" class="row">
-      <div class="map-item">
-        <div class="map-card-inner">
-          <div class="map-card-back">
-            <img class="map-image" src="https://r1.ilikewallpaper.net/ipad-air-wallpapers/download/104429/outrun-abstract-square-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg" alt="<%= title2 %> by <%= creator2 %>" />
-          </div>
-          <div class="map-card-front">
-          </div>
-        </div>
-      </div>
-      <div class="map-item monster">
-        <div class="map-card-inner">
-          <div class="map-card-back">
-            <img class="map-image" src="https://r1.ilikewallpaper.net/ipad-air-wallpapers/download/104429/outrun-abstract-square-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg" alt="<%= title3 %> by <%= creator3 %>" />
-          </div>
-          <div class="map-card-front">
-            <div id="monster">
-              <img class="map-image"src="https://www.how-to-draw-funny-cartoons.com/images/goblin-clipart-004.png" alt="<%= title3 %> by <%= creator3 %>" />
-              <progress id="monster-health" value="100" max="100"> 32% </progress>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="map-item door">
-        <div class="map-card-inner">
-          <div class="map-card-back">
-            <img class="map-image" src="https://r1.ilikewallpaper.net/ipad-air-wallpapers/download/104429/outrun-abstract-square-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg" alt="<%= title3 %> by <%= creator3 %>" />
-          </div>
-          <div class="map-card-front">
-            <img class="map-image" id="door" src="https://drawinghowtos.com/wp-content/uploads/2021/09/door-colored.jpg" alt="<%= title3 %> by <%= creator3 %>" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+  <header style="border: 2px solid black; height: 5vh">
+    This is the header
+  </header>
+  <main style="display: flex; justify-content: space-between; height: 90vh">
+    <div style="display: flex; flex-direction: column;justify-content: space-between; height: 100%; width: 70vw"> <!-- Left side-->
+      <div id="map" style="border: 2px solid black;height: 100%; padding: 30px; max-height: 100%;overflow: scroll;     white-space: nowrap;
+      ">
+      This is the game board
+
+  </div>
+  <div style="border: 2px solid black; height: 10vh; max-height: 100%; overflow: scroll"> This is the action log
+    <p>Doe</p>
+    <p>Ray</p>
+    <p>Me</p>
+    <p>Far</p>
+    <p>Sew</p>
+    <p>La</p>
+    <p>Tea</p>
+  </div>
+</div>
+<div style="border: 2px solid black;  width: 30vw; height: 100%;"> This is the info Panel<!-- Right side-->
+  <div style="display: flex; justify-content">
+    <div> nav 1 </div>
+    <div> nav 2 </div>
+    <div> nav 3 </div>
+  </div>
+</div>
+</main>
+<footer style="border: 2px solid black; height: 3vh">
+  This is the footer
+</footer>
+
+  <script src="interface_script.js" defer></script>
+
 </body>
+
+
 </html>
 
 <!-- Requires additional elements

@@ -1,0 +1,73 @@
+{
+  "details": {
+    "name": "bat",
+    "size": "Tiny",
+    "type": "beast",
+    "alignment": "unaligned",
+    "rating": 0
+  },
+  "stats": {
+    "raw": {
+      "str": 2,
+      "dex": 15,
+      "con": 8,
+      "int": 2,
+      "wis": 12,
+      "cha": 4
+    },
+    "mod": {
+      "str": -4,
+      "dex": 2,
+      "con": -1,
+      "int": -4,
+      "wis": 1,
+      "cha": -3
+    },
+    "saves": {
+      "str": -4,
+      "dex": 2,
+      "con": -1,
+      "int": -4,
+      "wis": 1,
+      "cha": -3
+    }
+  },
+  "skills": {
+    "acrobatics": 2,
+    "animal-handling": 1,
+    "arcana": -4,
+    "athletics": -4,
+    "deception": -3,
+    "history": -4,
+    "insight": 1,
+    "intimidation": -3,
+    "investigation": -4,
+    "medicine": 1,
+    "nature": -4,
+    "perception": 1,
+    "performance": -3,
+    "persuasion": -3,
+    "religion": -4,
+    "sleight-of-hand": 2,
+    "stealth": 2,
+    "survival": 1
+  },
+  "combat": {
+    "ac": 12,
+    "hp-max": 1,
+    "hp-current": 1,
+    "damage-vulnerability": [],
+    "damage-resistance": [],
+    "damage-immunity": [],
+    "condition-immunity": [],
+    "initiative": 2
+  },
+  "actions": {
+    "Bite": {
+      "damage": {
+        "piercing": "0d0+1"
+      },
+      "bonus": 0
+    }
+  }
+}
